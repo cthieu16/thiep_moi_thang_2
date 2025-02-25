@@ -1,14 +1,6 @@
+import { Divider } from "antd";
 import React from "react";
 import styled from "styled-components";
-import { Divider } from "antd";
-import {
-  GROOM_NAME,
-  GROOM_FATHER_NAME,
-  GROOM_MOTHER_NAME,
-  BRIDE_NAME,
-  BRIDE_FATHER_NAME,
-  BRIDE_MOTHER_NAME,
-} from "../../config";
 import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
@@ -55,29 +47,51 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title data-aos="fade-up">초대합니다</Title>
+        <Title data-aos="fade-up">Các thành viên tham gia</Title>
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
-        서로 마주 보며 다져온 사랑을
+        Thiều Trần Cương
         <br />
         <br />
-        이제 함께 한곳을 바라보며 걸어갈 수 있는
+        Đào Xuân Thủy
         <br />
         <br />
-        큰 사랑으로 키우고자 합니다.
+        Đào Duy Trường (Chủ Chi)
         <br />
         <br />
-        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게
+        Nguyễn Tiến Vinh
         <br />
         <br />
-        앞날을 축복해 주시면 감사하겠습니다.
+        Thiều Đại Dương
+        <br />
+        <br />
+        Lưu Quốc Lâm
+        <br />
+        <br />
+        Thiều Xuân Lộc
+        <br />
+        <br />
+        Đàm Đức Hùng(Chủ Chi + Chủ Chì)
+        <br />
+        <br />
+        Mai Đình Thi
+        <br />
+        <br />
+        Lê Văn Minh
+        <br />
+        <br />
+        Ngô Minh Tuấn
+        <br />
+        <br />
+        Phạm Thành Long
+        <br />
+        <br />
+        Lê Đức Cương
+        <br />
+        <br />
+        Và một số cái tên khác
       </Content>
-      <GroomBride data-aos="fade-up">
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
-        <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
-      </GroomBride>
     </Wrapper>
   );
 };

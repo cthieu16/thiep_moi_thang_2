@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import {
+  BRIDE_NAME,
+  GROOM_NAME,
   WEDDING_DATE,
   WEDDING_LOCATION,
-  GROOM_NAME,
-  BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
-import GroovePaper from "../assets/GroovePaper.png";
+import BackgroundVideo from "../assets/background.jpeg";
 
 const Layout = styled.div`
   width: 70%;
@@ -53,7 +52,7 @@ const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
+        <WeddingInvitation>THIỆP MỜI "GẶP NHAU CUỐI THÁNG 2"</WeddingInvitation>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
@@ -63,9 +62,7 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/mp4" />
-      </VideoBackground>
+      <img style={{width: "100%"}} src={BackgroundVideo} alt="" />
     </Layout>
   );
 };

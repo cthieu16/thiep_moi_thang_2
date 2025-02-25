@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
 import { Divider } from "antd";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Flower from "../assets/flower2.png";
 
@@ -95,7 +95,7 @@ const Location = () => {
   return (
     <Wrapper>
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-        <Title>오시는 길</Title>
+        <Title>Bản đồ </Title>
       </Divider>
       <Image src={Flower} />
       <Map

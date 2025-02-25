@@ -1,18 +1,14 @@
-import React, { useEffect } from "react";
 import { Layout } from "antd";
-import styled from "styled-components";
-import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
+import React, { useEffect } from "react";
+import "react-image-gallery/styles/css/image-gallery.css";
+import styled from "styled-components";
 import Gallery from "../components/gallery";
 import Greeting from "../components/greeting";
 import Title from "../components/title";
 import "../styles/index.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
-import Location from "../components/location";
-import CongratulatoryMoney from "../components/congratulatoryMoney";
-import Share from "../components/share";
-import Quote from "../components/quote";
 import Song from "../assets/song.mp3";
 
 import AOS from "aos";
@@ -52,10 +48,6 @@ const IndexPage = () => {
       <Title />
       <Greeting />
       <Gallery />
-      <Location />
-      <Quote />
-      <CongratulatoryMoney />
-      <Share />
       <Footer
         style={{
           background: "#D7CCC8",
@@ -64,7 +56,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        Copyright © 2025 Thiều Trần Cương
       </Footer>
     </Wrapper>
   );
