@@ -5447,7 +5447,7 @@ gatsby-worker@^1.25.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.0.0-next, gatsby@^4.14.0:
+gatsby@^4.0.0-next, gatsby@^4.25.9:
   version "4.25.9"
   resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.25.9.tgz"
   integrity sha512-/0/C4mesu+afcoQ+SCmTJQJrZLS7cUIgqotxPQ61+hhvE/DoU8j6a61qM1jOp1/Bwh+FQBpDXuFxGFAF3yNBig==
